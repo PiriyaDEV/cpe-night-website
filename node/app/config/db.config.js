@@ -1,24 +1,10 @@
-// module.exports = {
-//   HOST: process.env.DB_URL || "localhost",
-//   USER: "root",
-//   PASSWORD: "cpeNight!1",
-//   DB: "cpeNightdb",
-//   dialect: "mysql",
-//   pool: {
-//     max: 5,
-//     min: 0,
-//     acquire: 30000,
-//     idle: 10000,
-//   },
-// };
-
 module.exports = {
-  HOST: process.env.DB_URL || "localhost",
-  USER: "root",
-  PASSWORD: "Strong1234!",
-  PORT: 3306,
-  DB: "cpenight",
-  dialect: "mysql",
+  HOST: process.env.DB_URL,
+  USER: process.env.DB_USER,
+  PASSWORD: process.env.DB_PASSWORD,
+  PORT: process.env.DB_PORT,
+  DB: process.env.DB_NAME,
+  dialect: process.env.DB_TYPE,
   pool: {
     max: 5,
     min: 0,
